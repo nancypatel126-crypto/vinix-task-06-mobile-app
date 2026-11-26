@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie - Food Delivery App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Foodie<span>.</span></div>
+    <button class="location">📍 Mehsana ▼</button>
+    <button class="profile">👤</button>
+</header>
+
+<main>
+    <section class="welcome">
+        <p>Good morning 👋</p>
+        <h1>What would you like<br>to <span>eat today?</span></h1>
+    </section>
+
+    <section class="search">
+        <span>🔍</span>
+        <input type="text" id="searchInput"
+               placeholder="Search food or restaurant...">
+    </section>
+
+    <section class="categories">
+        <h2>Categories</h2>
+        <div class="category-list">
+            <button class="category active" data-category="All">
+                🍽️<span>All</span>
+            </button>
+            <button class="category" data-category="Pizza">
+                🍕<span>Pizza</span>
+            </button>
+            <button class="category" data-category="Burger">
+                🍔<span>Burger</span>
+            </button>
+            <button class="category" data-category="Dessert">
+                🍰<span>Dessert</span>
+            </button>
+            <button class="category" data-category="Drinks">
+                🥤<span>Drinks</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="popular">
+        <div class="section-title">
+            <h2>Popular Food</h2>
+            <span>View all →</span>
+        </div>
+
+        <div class="food-grid" id="foodGrid">
+
+            <article class="food-card" data-category="Pizza">
+               <div class="food-image">
+                <div class="food-image pizza">🍕</div>
+                <div class="food-info">
+                    <span class="rating">⭐ 4.8</span>
+                    <h3>Cheese Pizza</h3>
+                    <p>Fresh & delicious pizza</p>
+                    <div class="price-row">
+                        <strong>₹199</strong>
+                        <button class="add-btn" data-name="Cheese Pizza"
+                                data-price="199">+</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="food-card" data-category="Burger">
+                <div class="food-image burger">🍔</div>
+                <div class="food-info">
+                    <span class="rating">⭐ 4.7</span>
+                    <h3>Classic Burger</h3>
+                    <p>Fresh crispy burger</p>
+                    <div class="price-row">
+                        <strong>₹149</strong>
+                        <button class="add-btn" data-name="Classic Burger"
+                                data-price="149">+</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="food-card" data-category="Dessert">
+                <div class="food-image dessert">🍰</div>
+                <div class="food-info">
+                    <span class="rating">⭐ 4.9</span>
+                    <h3>Chocolate Cake</h3>
+                    <p>Sweet chocolate dessert</p>
+                    <div class="price-row">
+                        <strong>₹120</strong>
+                        <button class="add-btn" data-name="Chocolate Cake"
+                                data-price="120">+</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="food-card" data-category="Drinks">
+                <div class="food-image drinks">🥤</div>
+                <div class="food-info">
+                    <span class="rating">⭐ 4.6</span>
+                    <h3>Cold Coffee</h3>
+                    <p>Chilled creamy coffee</p>
+                    <div class="price-row">
+                        <strong>₹99</strong>
+                        <button class="add-btn" data-name="Cold Coffee"
+                                data-price="99">+</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="cart">
+        <div>
+            <span id="cartCount">0 Items</span>
+            <h3 id="cartTotal">₹0</h3>
+        </div>
+        <button id="cartButton">View Cart →</button>
+    </section>
+</main>
+
+<nav class="bottom-nav">
+    <a href="#" class="selected">🏠<span>Home</span></a>
+    <a href="#popular">🔍<span>Explore</span></a>
+    <a href="#cartButton">🛒<span>Cart</span></a>
+    <a href="#">👤<span>Profile</span></a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
